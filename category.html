@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylect.css">
+    <title>WEB BÁN ĐỒNG HỒ</title>
+</head>
+<body>
+    <div id="header">
+        <a href="TCT.html" class="logo" ><img src="img/logo.jpg" ></a>
+        <div class="menu">
+            <li><a href="category.html"><h2>THƯƠNG HIỆU</h2></a>
+                <ul class="sub-menu">
+                    <li><a href="category.html"><h3>Casio</h3></a></li>
+                    <li><a href="category.html"><h3>Casio Edifice</h3></a></li>
+                    <li><a href="category.html"><h3>Casio G-Shock</h3></a></li>
+                    <li><a href="category.html"><h3>Citizen</h3></a></li>
+                    <li><a href="category.html"><h3>Seiko</h3></a></li>
+                    <li><a href="category.html"><h3>Olym Pianus</h3></a></li>
+                    <li><a href="category.html"><h3>Daniel Wellington</h3></a></li>
+                    <li><a href="category.html"><h3>Orient</h3></a></li>
+                </ul></li>
+            <li><a href=""><h2>NAM</h2></a>
+                <ul class="sub-menu">
+                    <li><a href="category.html"><h3>Casio</h3></a></li>
+                    <li><a href="category.html"><h3>Casio Edifice</h3></a></li>
+                    <li><a href="category.html"><h3>Casio G-Shock</h3></a></li>
+                    <li><a href="category.html"><h3>Citizen</h3></a></li>
+                    <li><a href="category.html"><h3>Seiko</h3></a></li>
+                    <li><a href="category.html"><h3>Olym Pianus</h3></a></li>
+                    <li><a href="category.html"><h3>Daniel Wellington</h3></a></li>
+                    <li><a href="category.html"><h3>Orient</h3></a></li>
+                </ul></li>
+            <li><a href=""><h2>NỮ</h2></a>
+                <ul class="sub-menu">
+                    <li><a href="category.html"><h3>Casio</h3></a></li>
+                    <li><a href="category.html"><h3>Citizen</h3></a></li>
+                    <li><a href="category.html"><h3>Seiko</h3></a></li>
+                    <li><a href="category.html"><h3>Olym Pianus</h3></a></li>
+                    <li><a href="category.html"><h3>Daniel Wellington</h3></a></li>
+                    <li><a href="category.html"><h3>Orient</h3></a></li>
+                </ul></li>
+        </div>
+        <div class="other">
+            <li><input placeholder="Tìm kiếm" type="text"><i class="fas fa-search"></i>
+            
+            </li>
+            <li><a class="fas fa-user" href=""></a>
+                <ul class="sub-menu">
+                    <li><a href="login.html"><h4>Đăng xuất</h4></a></li>
+                </ul>
+            </li>
+            <li>
+                <button id="cart">
+                <a class="fas fa-shopping-cart" href=""></a>
+                 Giỏ hàng
+                 </button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                     
+                        <div class="modal-body" >
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+                            
+                            </div>
+                                
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">0VNĐ</span>
+                            </div>
+                    </div>       
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+                
+            </li>
+        </div>
+    </div>
+
+    <section class="category">
+        <div class="container">
+            <div class="category-top row">
+                <p><h3><a href="TCT.html"> Trang chủ</a> </h3></p> <span>&#10230;</span><p><h3>Sản phẩm</h3></p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="category-left row">
+                    <ul>
+                        <li class="category-left-li"><button href="#" value="Nữ" onclick="selectGender(this)"><h3>Nữ</h3></button>
+                            <ul>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Casio" >Casio</button></li>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Citizen">Citizen</button></li>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Seiko">Seiko</button></li>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Olym Pianus">Olym Pianus</button></li>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Daniel Wellington">Daniel Wellington</button></li>
+                                <li><button class="brand" onclick="semorebrandFemale(this)" value="Orient">Orient</button></li>
+                            </ul>
+                        </li>
+                        <li class="category-left-li"><button href="#" value="Nam" onclick="selectGender(this)"><h3>Nam</h3></button>
+                           
+                             <ul>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Casio">Casio</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Casio G-SHOCK">Casio G-Shock</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Casio Edifice">Casio Edifice</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Citizen">Citizen</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Seiko">Seiko</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Olym Pianus">Olym Pianus</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Daniel Wellington">Daniel Wellington</button></li>
+                                <li><button class="brand" onclick="semorebrandMale(this)" value="Orient">Orient</button></li>
+                             </ul>
+                    
+                        </li>
+                        <li class="category-left-li"><a href="#"><h3>Thương hiệu</h3></a>
+                            <ul>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Casio">Casio</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Casio G-SHOCK">Casio G-Shock</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Casio Edifice">Casio Edifice</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Citizen">Citizen</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Seiko">Seiko</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Olym Pianus">Olym Pianus</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Daniel Wellington">Daniel Wellington</button></li>
+                                <li><button class="brand" onclick="selectBrand(this)" value="Orient">Orient</button></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-right row">
+                    <div class="category-right-top-item">
+                        <p>Tất cả sản phẩm</p>
+                    </div>
+                    
+                    <div class="category-right-top-item">
+                        
+                        <input type="text" placeholder="Tìm kiếm" id="search" oninput="findProduct()">
+                    </div>
+                    <div class="category-right-top-item">
+                        <select id="filt-pr" onchange="filtpr(this)"><i class="fas fa-sort-down"></i>
+                            <option value="0">Giá</option>
+                            <option value="1">Dưới 5.000.000 VNĐ</option>
+                            <option value="2">5.000.000 - 10.000.000 VNĐ</option>
+                            <option value="3">Trên 10.000.000 VNĐ</option>
+                            
+                        </select>
+
+                    </div>
+                    <div class="category-right-top-item">
+                        <select id="sort" onchange="sapxep(this)" >
+                            <option value="1"><p>Sắp xếp từ A đến Z </p></option>
+                            <option value="2"><p>Sắp xếp từ Z đến A </p></option>
+                            <option value="3"><p>Giá cao đến thấp</p></option>
+                            <option value="4"><p>Giá thấp đến cao</p></option>
+                        </select> 
+                    </div>
+                    <div class="category-right-content">
+                        <div id="cateproducts">
+                            
+                        </div> 
+                        
+                        <div class="bton">
+                            
+                            <button onclick="toggleModal()"><i class="fas fa-arrow-left"></i> Quay về</button>
+                            <h2>THÔNG TIN CHI TIẾT </h2>
+                            <div class="width">
+                                <div class="list-img">
+                                    <div class="img1"><img src="" alt=""></div>
+                                    <div class="img2"><img src="" alt=""></div>
+                                </div>
+                            
+                                <div class="list-inf">
+                                    <div class="name"></div>
+                                    <div class="price"></div>
+                                
+                                </div>
+                            </div>
+                            <h2>THÔNG SỐ KỸ THUẬT</h2>
+                            <div class="list-des">
+                                <div class="descript1"></div>
+                                <div class="descript2"></div>
+                            </div>
+                        </div>
+                    </div>
+                          
+                    <div class="category-right-bottom row ">
+                        
+                        <ul class="category-right-bottom-items">
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    
+    <div id="footer">
+        <div class="box">
+            <a href="TCT.html" class="logo"><img src="img/logo.jpg" alt=""></a>
+            <p>Cung cấp sản phẩm với chất lượng tốt nhất</p>
+        </div>
+        <div class="box">
+            <h3>CỬA HÀNG ĐỒNG HỒ</h3>
+            <ul class="quick-menu">
+                <div class="item"><a href="TCT.html"> TRANG CHỦ </a></div>
+                <div class="item"><a href="category.html"> SẢN PHẨM</a></div>
+            </ul>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button onclick="Receive()">Nhận tin</button>
+            </form>
+        </div>
+    </div>
+    <script src="JS/category.js"></script>
+    <script src="JS/cateproduct.js"></script>
+    
+</body>
+</html>

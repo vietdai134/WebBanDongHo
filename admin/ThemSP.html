@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin</title>
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">">
+</head>
+<body>
+    <div class="boxcenter">
+        <div class="row mb headeradmin">
+            <h1>Quản lí Bán đồng hồ</h1>
+        </div>
+        <div class="row mb menu">
+            <ul>
+                <li><a href="TrangChu.html">Trang chủ</a></li>
+                <li><a href="ThemSP.html"> Quản lý sản phẩm </a></li>
+                <li><a href="QuanLiDonHang.html">Quản lí đơn hàng</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="row frmtitle"><h1>Quản lý sản phẩm</h1>
+            </div>
+   <div class="row mb10">
+    <label for="">Mã ID</label>
+    <input type="number" id="id">
+   </div>
+   <div class="row mb10">
+    <label for="">Tên Sản Phẩm</label>
+    <input type="text" id="name">
+   </div>
+   <div class="row mb10">
+    <label for="">Giá</label>
+    <input type="number" id="Gia">
+   </div>
+   <div class="row mb10">
+    <label for="">Mô tả sản phẩm</label>
+    <input type="text" id="Descript">
+   </div>
+   <div class="row mb10">
+    <label for="">Hình Ảnh</label>
+    <input type="file" id="img">
+   </div>
+   <div class="row mb10">
+   <button onclick="add()">Thêm Mới</button>
+   </div>
+
+   <table class="table" id="render">
+    <thead>
+        <tr>
+            <th>Mã Loại</th>
+            <th>Tên Loại</th>
+            <th>Số Lượng</th>
+            <th>Giá</th>
+            <th>Hình Ảnh</th>
+            <th>Công cụ</th>
+        </tr>
+    </thead>
+   </table>
+
+   <script src="Js/ChinhSua.js"></script>
+</body>
+</html>
